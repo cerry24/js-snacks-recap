@@ -1,0 +1,15 @@
+#odd,
+#even {
+    text-align: center;
+    font-size: large;
+}
+
+#odd {
+    color: red;
+    border: 5px red solid;
+}
+
+#even {
+    color: green;
+    border: 5px green solid;
+}

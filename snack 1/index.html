@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Js snaks</title>
+    </head>
+    <body>
+        <div id="app">
+            <main>
+                <div id="even" v-for="number in evenNumbers">{{ number }}</div>
+                <div id="odd" v-for="number in oddNumbers">{{ number }}</div>
+
+                <a href="#" id="btn" @click="getANumber()">esegui</a>
+            </main>
+        </div>
+
+        <!-- Vue v3 cdn -->
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <!-- axios cdn -->
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script type="text/javascript" src="./js/script.js"></script>
+    </body>
+</html>

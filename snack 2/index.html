@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Js snaks</title>
+    </head>
+    <body>
+        <div id="app">
+            <main>
+                <input type="text" id="guest-name" v-model="guestName">
+
+                <a href="#" id="btn" @click="checkPresence(guestName)">controlla</a>
+            </main>
+        </div>
+
+        <!-- Vue v3 cdn -->
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <!-- axios cdn -->
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script type="text/javascript" src="./js/script.js"></script>
+    </body>
+</html>

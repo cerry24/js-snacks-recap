@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Js snaks</title>
+        <!-- custom css -->
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <div id="app">
+            <main>
+                <section id="chat">
+                    <div v-for="message in messages" 
+                    class="message"
+                        :class="(message.status === 'sent') ? 'message-sent' : 'message-received'"
+                    >
+                        {{ message.text }}
+                    </div>
+                </section>
+                
+                <section id="input">
+                    <input type="text" id="message-input" placeholder="scrivi messaggio" 
+                        v-model="newMessage" 
+                        @keyup.enter="sendNewMessage(newMessage)"
+                    >
+
+                    <a href="#" id="btn-send" @click="sendNewMessage(newMessage)">invia</a>
+                </section>
+            </main>
+            
+        </div>
+
+        <!-- Vue v3 cdn -->
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <!-- axios cdn -->
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script type="text/javascript" src="./js/script.js"></script>
+    </body>
+</html>

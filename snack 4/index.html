@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Js snaks</title>
+    </head>
+    <body>
+        <div id="app">
+            <main>
+                <label for="user-input">Qanti elementi vuoi includere nell'array?</label>
+                <input type="number" id="user-input" v-model="userElementTot">
+                <a href="#" id="btn" @click="getNumbersSum()">send</a>
+
+                <pre>La somma è: {{ sum }}</pre>
+            </main>
+        </div>
+
+        <!-- Vue v3 cdn -->
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <!-- axios cdn -->
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script type="text/javascript" src="./js/script.js"></script>
+    </body>
+</html>
